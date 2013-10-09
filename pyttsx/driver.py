@@ -102,7 +102,7 @@ class DriverProxy(object):
             self._name = cmd[2]
             try:
                 cmd[0](*cmd[1])
-            except Exception, e:
+            except Exception as e:
                 self.notify('error', exception=e)
                 if self._debug: traceback.print_exc()
 
@@ -219,6 +219,6 @@ class DriverProxy(object):
         within an external event loop.
         '''
         try:
-            self._iterator.next()
+            next(self._iterator)
         except StopIteration:
             pass
