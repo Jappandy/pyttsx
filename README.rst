@@ -2,7 +2,7 @@
 pyttsx
 ======
 
-Cross-platform Python wrapper for text-to-speech synthesis
+This is a Python3 port of pyttsx, which is a cross-platform Python wrapper for text-to-speech synthesis.  The original software is available at https://github.com/parente/pyttsx.
 
 Quickstart
 ==========
