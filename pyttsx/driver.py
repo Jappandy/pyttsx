@@ -60,7 +60,7 @@ class DriverProxy(object):
             else:
                 driverName = 'espeak'
         # import driver module
-        name = 'drivers.%s' % driverName
+        name = 'pyttsx.drivers.%s' % driverName
         self._module = __import__(name, globals(), locals(), [driverName])
         # build driver instance
         self._driver = self._module.buildDriver(weakref.proxy(self))
